@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/*Globalese*/
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/*Cabecera*/
+
+header{
+    background-color: #037bc0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header{
+    background-color: #037bc0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
