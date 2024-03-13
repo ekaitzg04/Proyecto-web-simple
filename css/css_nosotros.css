@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 *,
@@ -16,6 +14,7 @@ html {
 body {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
+    margin: 1rem;
 }
 
 img {
@@ -69,7 +68,6 @@ a {
     max-width: 120rem;
     margin-inline: auto;
 }
-
 
 /*Cabecera*/
 
@@ -128,67 +126,39 @@ a {
 }
 
 /*Content*/
-.info-div1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.por-que-div{
+    background-color: #807777;
 }
 
-.info-div2 {
-    padding-right: 1rem;
+#imgs{
+    width: 15%;
+    margin: 1rem;
 }
 
-.noticias {
-    background-color: #2a81b4;
-    align-items: center;
-}
-
-.noticias-abajo {
+.img_p{
     display: flex;
     flex-direction: row;
+ 
+}
+
+.por-que-ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    background-color: #2a81b4;
+    margin-left: 20%;
+    margin-right: 20%;
+    list-style: none;
 }
 
-#imagen1 {
-        align-items: center;
+.por-que{
+    font-weight: 700;
+    color: #090821;
+    display: flex;
+    justify-content: center;
 }
 
-#imagen2 {
-    align-items: center;
-}
-
-#imagen3 {
-    align-items: center;
-}
-
-.noticia1 {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr;
-}
-
-.info-noticia1 {
-    text-align: center;
-}
-.info-noticia2 {
-    text-align: center;
-}
-.info-noticia3 {
-    text-align: center;
-}
-.noticia2 {
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-.noticia2 p {
-    padding-right: 10rem;
-}
-.noticia3{
-    margin-top: 1rem;
-}
-
-.link{
+.contactanos{
     background-color: #8cbc00;
     display: block;
     color: white;
@@ -196,11 +166,19 @@ a {
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
-
+    height: 50px;
+    text-align: center;
+    margin: 3rem;
 }
-
-.link:hover{
-    background-color: #769c02;
+.contactanos-div{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    background-color: black;
+}
+.contactanos-div h1{
+    color: white;
+    font-size: 3rem  ;
 }
 
 /*Footer*/
