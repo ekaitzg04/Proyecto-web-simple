@@ -107,27 +107,9 @@ a {
     width: 10rem;
 }
 
-.hero {
-    background-image: url('../img/Asesor.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 40rem;
-    margin-bottom: 1rem;
-}
-
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    border: 1rem solid #807777;
-    border-radius: 20px;
-}
-
 /*Content*/
 .por-que-div{
-    background-color: #807777;
+    background-color: #58a4d0;
 }
 
 #imgs{
@@ -159,7 +141,7 @@ a {
 }
 
 .contactanos{
-    background-color: #8cbc00;
+    background-color: #688906;
     display: block;
     color: white;
     text-transform: uppercase;
@@ -169,17 +151,33 @@ a {
     height: 50px;
     text-align: center;
     margin: 3rem;
+    border-radius: 1rem;
+}
+
+
+.contactanos:hover{
+    background-color: #94bc1e;
+    border-radius: 1rem;
 }
 .contactanos-div{
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;
-    background-color: black;
+    background-color: #205777;
 }
 .contactanos-div h1{
     color: white;
     font-size: 3rem  ;
 }
+aside {
+    width: 40%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    text-align: center;
+  }
 
 /*Footer*/
 

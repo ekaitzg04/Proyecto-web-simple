@@ -1,8 +1,6 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 *,
@@ -16,6 +14,7 @@ html {
 body {
     font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
+    margin: 1rem;
 }
 
 img {
@@ -70,6 +69,9 @@ a {
     margin-inline: auto;
 }
 
+/* video{
+    max-width: 100%;
+} */
 
 /*Cabecera*/
 
@@ -109,108 +111,45 @@ a {
     width: 10rem;
 }
 
-.hero {
-    background-image: url('../img/Asesor.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 40rem;
-    margin-bottom: 1rem;
-}
-
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: space-between;
-    border: 1rem solid #807777;
-    border-radius: 20px;
-}
-
 /*Content*/
-.info-div1 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+
+/* CSS para el video como fondo y el texto superpuesto */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.info-div1 h2{
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.info-div2 {
-    padding-right: 1rem;
-}
-
-.info-div2 h2{
-    text-align: center;
-}
-
-.noticias {
-    background-color: #2a81b4;
-    align-items: center;
-}
-
-.noticias-abajo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2a81b4;
-}
-
-#imagen1 {
-        align-items: center;
-}
-
-#imagen2 {
-    align-items: center;
-}
-
-#imagen3 {
-    align-items: center;
-}
-
-.noticia1 {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 2fr 1fr;
-}
-
-.info-noticia1 {
-    text-align: center;
-}
-.info-noticia2 {
-    text-align: center;
-}
-.info-noticia3 {
-    text-align: center;
-}
-.noticia2 {
-    margin-top: 1rem;
-    margin-right: 1rem;
-}
-.noticia2 p {
-    padding-right: 10rem;
-}
-.noticia3{
-    margin-top: 1rem;
-}
-
-.link{
-    background-color: #688906;
-    display: block;
     color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-    padding: 1rem;
-    transition: background-color .3s ease-out;
-    border-radius: 2rem;
 }
 
-.link:hover{
-    background-color: #94bc1e;
-    border-radius: 2rem;
+.text-overlay p {
+    font-size: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
 }
+
+
 
 /*Footer*/
 
