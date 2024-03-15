@@ -1,77 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css_contacto.css">
-    <title>Nosotros</title>
-</head>
-<body>
-    <header>
-        <div class="Contenedor-div-principal">
-            <nav class="nav-principal">
-                <ul class="contenedor-ul-principal">
-                    <li>
-                        <img src="img/Logo.webp" alt="Logo de la empresa"
-                            id="logo">
-                    </li>
-                    <li>
-                        <a href="main.html" class="inicio">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html"
-                            class="nosotros">
-                            Nosotros
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contacto.html"
-                            class="contacto">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <h1 class="nombre-empresa">
-            Asesorias Gasteiz
-        </h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/css_contacto.css">
+        <title>Nosotros</title>
+    </head>
+    <body>
+        <header>
+            <div class="Contenedor-div-principal">
+                <nav class="nav-principal">
+                    <ul class="contenedor-ul-principal">
+                        <li>
+                            <img src="img/Logo.webp" alt="Logo de la empresa"
+                                id="logo">
+                        </li>
+                        <li>
+                            <a href="main.html" class="inicio">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html"
+                                class="nosotros">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contacto.html"
+                                class="contacto">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="nombre-empresa">
+                Asesorias Gasteiz
+            </h1>
+        </header>
 
-    <div class="video-container">
-        <video autoplay muted loop
-            src="https://asesoresherrera.es/wp-content/uploads/AsesoresHerrera.mp4"></video>
-        <div class="text-overlay">
-            
-        </div>
-    </div>
+        <div class="video-div">
+            <video autoplay muted loop
+                src="https://asesoresherrera.es/wp-content/uploads/AsesoresHerrera.mp4"></video>
+            <div class="video-subdiv">
+                <h1>Contacto online</h1>
+                <p>Si estás interesado en alguno de nuestros servicios, quieres
+                    colaborar con nosotros, o simplemente tienes alguna duda o
+                    quieres comentarnos algo, ponte en contacto con nuestros
+                    expertos. Te contestaremos en la mayor brevedad posible.</p>
+                <form action="#" method="post">
+                    <div class="formulario">
+                        <div class="campos">
+                            <label for="campo-nombre">Nombre: </label>
+                            <input id="campo-nombre" type="text" name="nombre"
+                                placeholder="Escribe tu nombre"> <br>
+                        </div>
 
-    <footer class="footer">
-        <div>
-            <h3>Vitoria</h3>
-            <nav>
-                <ul class="vitoria-ul">
-                    <li>Calle Los Herran</li>
-                    <li>01017 Vitoria </li>
-                    <li>Telefono 123456789</li>
-                    <li>e-mail asesoriavitoria@gmail.com</li>
-                </ul>
-            </nav>
+                        <div class="campos">
+                            <label for="campo-apellido">Apellido</label>
+                            <input type="text" name="Apellido"
+                                id="campo-apellido"> <br>
+                        </div>
+
+                        <div class="campos">
+                            <label for="campo-email">Email</label>
+                            <input type="email" name="email" id="campo-email">
+                            <br>
+
+                        </div>
+                        <div class="campos">
+                            <label for="campo-contraseña">Contraseña</label>
+                            <input type="password" name="contraseña"
+                                id="campo-contraseña"> <br>
+                        </div>
+
+                        <div>
+                            <label>Genero: </label>
+                            <input type="radio" name="genero" value="hombre"
+                                checked="checked">Hombre
+                            <input type="radio" name="genero"
+                                value="mujer">Mujer
+                            <input type="radio" name="genero" value="otro">Otro
+                        </div>
+
+                        <div class="campos">
+                            <label for="campo-select">¿En que campo necesitas
+                                asesoría?</label>
+                            <!--Puedes añadir multiple-->
+                            <select name="mayor-de-edad" id="campo-select">
+                                <option value="fiscal" selected>Fiscal</option>
+                                <option value="contable">Contable</option>
+                                <option value="financiera">Financiera</option>
+                                <option value="legal">Legal</option>
+                                <option value="nómina">Nómina</option>
+                                <option value="recursos humanos">Recursos
+                                    humanos</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="campos">
+                        <label>¿Cómo podemos ayudarte?</label>
+                        <textarea name="textarea" cols="50"
+                            rows="10"></textarea>
+
+                    </div>
+
+                    <div>
+                        <input name="nw_aceptopd" type="checkbox">
+                        <span class="acepto">He leído y acepto</span> <a
+                            href='/es/politica-privacidad-cookies'>la
+                            política<span class='span'> de privacidad y
+                                cookies</span></a>.
+
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <h3>Bilbao</h3>
-            <nav>
-                <ol class="bilbao-ol">
-                    <li>Calle Gran Via </li>
-                    <li>48011 Bilbao (Vizcaya)</li>
-                    <li>Telefono 987654321</li>
-                    <li>e-mail asespriabilbao@gmail.com</li>
-                </ol>
-            </nav>
-        </div>
-    </footer>
-</body>
+
+        <footer class="footer">
+            <div>
+                <h3>Vitoria</h3>
+                <nav>
+                    <ul class="vitoria-ul">
+                        <li>Calle Los Herran</li>
+                        <li>01017 Vitoria </li>
+                        <li>Telefono 123456789</li>
+                        <li>e-mail asesoriavitoria@gmail.com</li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>Bilbao</h3>
+                <nav>
+                    <ol class="bilbao-ol">
+                        <li>Calle Gran Via </li>
+                        <li>48011 Bilbao (Vizcaya)</li>
+                        <li>Telefono 987654321</li>
+                        <li>e-mail asespriabilbao@gmail.com</li>
+                    </ol>
+                </nav>
+            </div>
+        </footer>
+    </body>
 </html>
