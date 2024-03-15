@@ -69,6 +69,16 @@ a {
     margin-inline: auto;
 }
 
+aside {
+    width: 40%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+    text-align: center;
+}
+
 /*Cabecera*/
 
 .nombre-empresa {
@@ -95,7 +105,6 @@ a {
 }
 
 .contenedor {
-    max-width: auto;
     margin-inline: auto;
 }
 
@@ -112,7 +121,7 @@ a {
     background-color: #58a4d0;
 }
 
-#imgs{
+.imgs{
     width: 15%;
     margin: 1rem;
 }
@@ -124,13 +133,11 @@ a {
 }
 
 .por-que-ul{
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    align-items: center;
     margin-left: 20%;
-    margin-right: 20%;
-    list-style: none;
+    margin-right: 20%;  
 }
 
 .por-que{
@@ -169,15 +176,10 @@ a {
     color: white;
     font-size: 3rem  ;
 }
-aside {
-    width: 40%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-    text-align: center;
-  }
+
+.aside{
+    font-size: 5rem;
+}
 
 /*Footer*/
 
