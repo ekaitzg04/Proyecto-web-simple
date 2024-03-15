@@ -64,19 +64,25 @@ a {
     color: #000
 }
 
-.contenedor{
+.contenedor {
     max-width: 120rem;
     margin-inline: auto;
 }
 
 aside {
     width: 40%;
-    padding-left: 15px;
-    margin-left: 15px;
+    padding-left: 1rem;
+    margin-left: 1rem;
     float: right;
     font-style: italic;
     background-color: lightgray;
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    aside{
+        width: 60%;
+    }
 }
 
 /*Cabecera*/
@@ -116,38 +122,69 @@ aside {
     width: 10rem;
 }
 
+
+
+@media (max-width: 400px) {
+
+    .contenedor-ul-principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0rem 0px;
+        margin: 0px;
+        width: 98.7%;
+        height: 10rem;
+        background-color: #98cae6;
+        top: 0px;
+    }
+
+    .inicio{
+        padding-left: 2rem;
+    }
+
+    .contacto {
+        padding-right: 1rem;
+    }
+
+    #logo {
+        width: 10rem;
+    }
+}
+
 /*Content*/
-.por-que-div{
+.por-que-div {
     background-color: #58a4d0;
 }
 
-.imgs{
+.imgs {
     width: 15%;
     margin: 1rem;
 }
 
-.img_p{
+.img_p {
     display: flex;
     flex-direction: row;
- 
+
 }
 
-.por-que-ul{
+.por-que-ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     margin-left: 20%;
-    margin-right: 20%;  
+    margin-right: 20%;
 }
 
-.por-que{
+.por-que {
     font-weight: 700;
     color: #090821;
     display: flex;
     justify-content: center;
 }
 
-.contactanos{
+.contactanos {
     background-color: #688906;
     display: block;
     color: white;
@@ -162,25 +199,54 @@ aside {
 }
 
 
-.contactanos:hover{
+.contactanos:hover {
     background-color: #94bc1e;
     border-radius: 1rem;
 }
-.contactanos-div{
+
+.contactanos-div {
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;
     background-color: #205777;
 }
-.contactanos-div h1{
+
+.contactanos-div h1 {
     color: white;
-    font-size: 3rem  ;
+    font-size: 3rem;
 }
 
-.aside{
+.aside {
     font-size: 5rem;
 }
 
+
+@media (max-width: 400px) {
+    .por-que{
+        text-align: center;
+    }
+
+    .por-que-ul{
+        margin-left: 0rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contactanos-div{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside{
+        overflow:visible;
+        width: auto;
+        height: auto;
+        font-size: 4rem;
+        margin-right: 5rem;
+    }
+}
 /*Footer*/
 
 .footer {
@@ -191,6 +257,14 @@ aside {
     text-align: center;
     height: 15rem;
     padding-bottom: 0rem;
+}
+
+@media (max-width: 400px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 .vitoria-ul {

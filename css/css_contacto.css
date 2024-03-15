@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    margin-left: 0rem;
 }
 
 *,
@@ -69,10 +70,6 @@ a {
     margin-inline: auto;
 }
 
-/* video{
-    max-width: 100%;
-} */
-
 /*Cabecera*/
 
 .nombre-empresa {
@@ -106,6 +103,35 @@ a {
     width: 10rem;
 }
 
+@media (max-width: 400px) {
+
+    .contenedor-ul-principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0rem 0px;
+        margin: 0px;
+        width: 98.7%;
+        height: 10rem;
+        background-color: #98cae6;
+        top: 0px;
+    }
+
+    .inicio{
+        padding-left: 2rem;
+    }
+
+    .contacto {
+        padding-right: 1rem;
+    }
+
+    #logo {
+        width: 10rem;
+    }
+}
+
 /*Content*/
 
 
@@ -115,7 +141,6 @@ a {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1;
 }
 
 .video-div video {
@@ -127,7 +152,7 @@ a {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    z-index: -2;
+    z-index: -1;
 }
 
 .video-subdiv {
@@ -139,6 +164,13 @@ a {
     color: white;
     background-color: #c5d2d975;
 }
+
+@media (max-width: 768px) {
+    .video-subdiv {
+        width: 100%;
+    }
+}
+
 
 .video-subdiv p {
     font-size: 2rem;
@@ -156,17 +188,48 @@ a {
     height: 100%;
 }
 
+@media (max-width: 400px) {
+    .video-div{
+        height: 120vh;
+    }
+
+    .video-subdiv {
+        margin-top: 3rem;
+        margin-bottom: 20rem;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .campos {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .campos {
     display: flex;
     flex-direction: column;
 }
 
-.acepto{
+.acepto {
     color: black;
 }
 
 .span {
-color: blue;
+    color: blue;
+}
+
+.btn {
+    background-color: #037bc0;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 /*Footer*/
@@ -177,10 +240,17 @@ color: blue;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
     text-align: center;
-    height: 15rem;
+    height: auto;
     padding-bottom: 0rem;
 }
 
+@media (max-width: 400px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
 .vitoria-ul {
     list-style: none;
 }
