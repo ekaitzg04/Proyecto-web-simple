@@ -74,7 +74,7 @@ a {
 
     .contenedor-ul-principal {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
         list-style: none;
@@ -86,7 +86,7 @@ a {
         top: 0px;
     }
 
-    .inicio{
+    .inicio {
         padding-left: 2rem;
     }
 
@@ -150,7 +150,7 @@ a {
 
     .contenedor-ul-principal {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
         list-style: none;
@@ -162,7 +162,7 @@ a {
         top: 0px;
     }
 
-    .inicio{
+    .inicio {
         padding-left: 2rem;
     }
 
@@ -325,12 +325,13 @@ a {
 }
 
 @media (max-width: 400px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
         height: auto;
     }
 }
+
 .vitoria-ul {
     list-style: none;
 }

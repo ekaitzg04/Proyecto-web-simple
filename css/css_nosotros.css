@@ -80,7 +80,7 @@ aside {
 }
 
 @media (max-width: 400px) {
-    aside{
+    aside {
         width: 60%;
     }
 }
@@ -128,7 +128,7 @@ aside {
 
     .contenedor-ul-principal {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         align-items: center;
         list-style: none;
@@ -140,7 +140,7 @@ aside {
         top: 0px;
     }
 
-    .inicio{
+    .inicio {
         padding-left: 2rem;
     }
 
@@ -222,31 +222,32 @@ aside {
 
 
 @media (max-width: 400px) {
-    .por-que{
+    .por-que {
         text-align: center;
     }
 
-    .por-que-ul{
+    .por-que-ul {
         margin-left: 0rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
 
-    .contactanos-div{
+    .contactanos-div {
         text-align: center;
         display: flex;
         flex-direction: column;
     }
 
-    .aside{
-        overflow:visible;
+    .aside {
+        overflow: visible;
         width: auto;
         height: auto;
         font-size: 4rem;
         margin-right: 5rem;
     }
 }
+
 /*Footer*/
 
 .footer {
@@ -260,7 +261,7 @@ aside {
 }
 
 @media (max-width: 400px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
         height: auto;
